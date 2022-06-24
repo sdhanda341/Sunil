@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fillup</title>
+    <style>
+        body{
+            background-color: rgba(87, 73, 80, 0.103);
+            padding: 10px 500px;
+        }
+        .formdesign{
+            font-size: 20px;
+        }
+        .formdesign input{
+            width: 60%;
+            border: 2px solid green;
+            border-radius: 4px;
+            font-style: arial;
+        }
+        .formerror{
+            color: red;
+            font-size: 15px;
+        }
+        .but1{
+            border-radius: 9px;
+            width: 100px;
+            height: 40px;
+            font-size: 25px;
+            margin: 22px 20px;
+            background-color: green;
+        }
+        .but{
+            border-radius: 9px;
+            width: 100px;
+            height: 40px;
+            font-size: 25px;
+            margin: 22px 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+  
+  <h2>Please Fill the Following </h2>
+  <form method="post">
+    <div class="formdesign" id="name">
+        Name <input type="text" name="myName"required>
+    </div>
+    <br>
+    <div class="formdesign" id="email">
+        Email <input type="email" name="myemail"required>
+    </div>
+    <br>
+    <div class="formdesign" id="date">
+       D.O.B <input type="date" name="mydate"required>
+    </div>
+    <br>
+    <div class="formdesign" id="phone">
+        Phone <input type="text" name="Country code" value="+91-" required>
+    </div>
+    <br>
+    <div>
+        <input class="but1" type ="submit" value="Submit">
+        <input class="but" type ="reset" value="Reset">
+    </div>
+        
+</form>
+<p>Time remaining</p>
+<p id="countdownTimer"></p>
+
+<script src="app.js"></script>    
+    
+</body>
+</html>
